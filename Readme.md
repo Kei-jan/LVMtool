@@ -1,3 +1,6 @@
 # LVM tool
 
-> calculating left 
+> Calculating Left Ventricular Mass from .nii.gz label file.
+
+
+
