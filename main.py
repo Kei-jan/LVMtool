@@ -1,4 +1,3 @@
-import os
 
 from utils.args import get_parser
 from utils.nii_io import read_nii
@@ -9,7 +8,8 @@ def main_cal(args):
     label_array = select_voxel_value(nii_array,args.label_val)
     v = cal_true_volume(label_array,nii_affine)
     lvm = cal_LVM(v)
-    print(f'LVM: {lvm} (g)')
+    print(f'Volume: {format(v,".4f")} (mm^3)')
+    print(f'LVM: {format(lvm,".4f")} (g)')
 
 if __name__ == '__main__':
 
